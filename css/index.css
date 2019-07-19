@@ -8,6 +8,11 @@
   color: white;
   border-radius: 13%;
 }
+@media (max-width: 500px) {
+  .btn {
+    width: 80%;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -239,13 +244,30 @@ header nav a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    margin: 10% 0;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -266,6 +288,11 @@ header nav a {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -275,28 +302,32 @@ header nav a {
   display: flex;
   justify-content: space-between;
 }
-.home .content-pick .destination {
-  width: 30%;
-  margin-bottom: 30px;
-}
-.nav-text {
-  border-bottom: 2px dashed black;
-}
-.nav-text h3 {
-  font-size: 3rem;
-  margin-top: 3%;
-}
-.nav-text p {
-  margin-top: 2%;
-}
-.container {
-  width: 80%;
-}
 @media (max-width: 500px) {
-  .content-pick {
-    display: flex;
+  .home .content-pick {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+}
+.home .content-pick .destination {
+  width: 30%;
+  margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+  }
+}
+.home .nav-text {
+  border-bottom: 2px dashed black;
+}
+.home .nav-text h3 {
+  font-size: 3rem;
+  margin-top: 3%;
+}
+.home .nav-text p {
+  margin-top: 2%;
+}
+.container {
+  width: 80%;
 }
